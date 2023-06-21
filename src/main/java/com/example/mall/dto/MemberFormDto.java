@@ -13,6 +13,7 @@ import javax.validation.constraints.NotEmpty;
 @NoArgsConstructor
 @Getter
 @Setter
+@Builder
 public class MemberFormDto {
 
 
@@ -30,5 +31,12 @@ public class MemberFormDto {
     @NotEmpty(message = "주소는 필수 입력 값입니다.")
     private String address;
 
+    @Builder
+    public MemberFormDto(String name, String email, String password, String address) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.address = address;
+    }
 
 }

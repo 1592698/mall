@@ -1,5 +1,6 @@
-package com.example.mall.domain.members;
+package com.example.mall.domain.entity.member;
 
+import com.example.mall.constant.MemberRole;
 import com.example.mall.dto.MemberFormDto;
 import lombok.Builder;
 import lombok.Getter;

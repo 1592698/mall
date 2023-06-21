@@ -1,4 +1,4 @@
-package com.example.mall.domain.members;
+package com.example.mall.constant;
 
 public enum MemberRole {
     USER, ADMIN

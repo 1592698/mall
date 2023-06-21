@@ -1,6 +1,6 @@
 package com.example.mall.service;
 
-import com.example.mall.domain.members.Member;
+import com.example.mall.domain.entity.member.Member;
 import com.example.mall.dto.MemberFormDto;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 @Transactional
-@TestPropertySource(properties = {"spring.config.location=classpath:application.properties"})
+@TestPropertySource(locations="classpath:application-test.properties")
 public class MemberServiceTest {
 
     @Autowired
